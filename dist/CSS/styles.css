@@ -1,0 +1,154 @@
+html {
+    height: 100%;
+    width:100%;
+    font-size:9px;
+}
+
+body {
+    height:100%;
+    background-color:#F9F5F3;
+}
+
+#to-do-list {
+    max-width:80%;
+    margin:0 auto;
+
+    margin-top:3rem;
+    
+}
+
+#backboard {
+    overflow:auto;
+    
+    
+    border-radius: 3px;
+
+    position:relative;
+    z-index:5;
+}
+
+.doing-tab-color {
+    background-image: linear-gradient(to top , #F54567, #FFA08B);
+}
+
+.done-tab-color {
+    background-image: linear-gradient(to top, #F2ED76, #FF8B00);
+}
+
+
+#list {
+    
+    display:flex;
+    flex-direction: column;
+    margin:20px 30px 20px 30px;
+    
+}
+
+.list-item {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+
+    background-color:white;
+    border-radius: 10px;
+    height:50px;
+    margin-bottom:.40rem;
+}
+
+.list-item .task-left {
+    display:flex;
+    width: 90%;
+}
+
+.align-self-center{
+    align-self:center;
+}
+
+.task-item {
+    font-family:verdana;
+    font-size:2rem;
+    outline:none;
+
+    border:none;
+
+    width:100%;
+}
+
+.task-left-space {
+    margin-left:20px;
+}
+
+.task-right-space{
+    margin-right:20px;
+}
+
+#btn-clear-all-container {
+    display:flex;
+    justify-content: center;
+
+    margin-bottom:20px;
+    
+}
+
+#top-buttons {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-bottom:-5px;
+}
+
+#doing-tab {
+    background-color:#FE9E8A;
+    font-family:verdana;
+    font-weight: bold;
+    border-radius:3px;
+}
+
+#doing-tab:hover {
+    background-color:#F57155;
+    color:black;
+}
+
+#btn-add-task {
+    background-color:#7AFF35;
+    font-size: 2rem;
+    font-family:verdana;
+    border-radius:3px;
+}
+#btn-add-task:hover {
+    background-color:#38B700;
+    color:black;
+}
+
+#done-tab {
+    background-color:#FD8C18;
+    font-family:verdana;
+    font-weight: bold;
+    border-radius:3px;
+
+}
+
+#done-tab:hover {
+    background-color: #D3710C;
+    color:black;
+}
+
+.top-buttons-styles {
+    padding:5px 15px;
+    border: none;
+    margin:0px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.error-container {
+    display:flex;
+    justify-content:center;
+    
+}
+
+.error {
+    font-family:verdana;
+    font-size:2rem;
+    font-weight:bold;
+}
